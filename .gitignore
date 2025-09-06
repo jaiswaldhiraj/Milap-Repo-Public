@@ -1,0 +1,50 @@
+# Gradle
+.gradle/
+build/
+app/build/
+
+# IDE
+.idea/
+*.iml
+
+# Local config
+local.properties
+google-services.json
+
+# Keystore
+*.jks
+*.keystore
+
+# Mac
+.DS_Store
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Custom packages you don’t want public
+app/src/main/java/com/titan/milap/chatpage/
+app/src/main/java/com/titan/milap/homepage/
+app/src/main/java/com/titan/milap/loginsetup/
+app/src/main/java/com/titan/milap/notificationpackage/
+app/src/main/java/com/titan/milap/profilepage/
+app/src/main/java/com/titan/milap/searchpage/
+app/src/main/java/com/titan/milap/utils/
+functions/
+gradle/
+
+settings.gradle.kts
+*.kts
+gradle.properties
+gradlew
+gradlew.bat
+debug
+release
+*.pro
+milap-functions
+sampledata
+test
+androidTest

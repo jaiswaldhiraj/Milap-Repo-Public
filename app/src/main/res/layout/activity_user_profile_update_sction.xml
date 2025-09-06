@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilepage.UserProfileUpdateSection"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+<!--    Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center|start"
+        android:padding="6dp">
+        <ImageButton
+            android:id="@+id/update_section_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_margin="4dp"
+            android:paddingStart="6dp"
+            android:background="@color/black"
+            android:paddingEnd="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/update_your_profile"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        About me-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="About Me"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/grey_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Change your name"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/user_update_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:text="User Full Name"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/grey_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Change your birthday"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/user_update_dob"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:text="30/02/2003"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/grey_color" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Change your gender"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <RadioButton
+                    android:id="@+id/radioMan"
+                    android:text="Men"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start|center"
+                    android:buttonTint="@color/dark_red_color"/>
+
+                <RadioButton
+                    android:id="@+id/radioWoman"
+                    android:text="Women"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start|center" />
+
+                <RadioButton
+                    android:id="@+id/radioBeyondBinary"
+                    android:text="Beyond BInary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start|center" />
+            </RadioGroup>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/grey_color" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Gender type"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/genderChipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:chipSpacing="8dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/straight"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Straight"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/gay"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Gay"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/lesbian"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Lesbian"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bisexual"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Bisexual"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/nonbinary"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Non-binary"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/asexual"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Asexual"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/transgender"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Transgender"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+<!--        Update your phone number-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="2dp"
+                android:text="* Update your phone number"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:layout_gravity="start|center"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right_arrow_icon"
+                android:layout_gravity="end|center"/>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Update your photo-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="6dp"
+                android:text="* Update your photo"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Click again on your photo to change it"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="18sp"/>
+
+            <GridLayout
+                android:id="@+id/imageGrid"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:padding="5dp"
+                android:rowCount="2"
+                android:rowOrderPreserved="false">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="0dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_plus" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="0dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_plus" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="0dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_plus" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="0dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_plus" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Interested in people-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="16dp"
+                    android:text="* Interested in people"
+                    android:gravity="center|start"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/update_text_heading"
+                    android:includeFontPadding="false"
+                    android:textSize="16sp"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/interestChipGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:chipSpacing="8dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/men"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Men"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/women"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Women"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/beyondBinary"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Beyond Binary"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/everyone"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Everyone"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Set distance -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="16dp"
+                    android:text="* Set Distance"
+                    android:gravity="center|start"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/update_text_heading"
+                    android:includeFontPadding="false"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.378">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/font_2"
+                        android:gravity="center|left"
+                        android:text="Distance preference"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_weight="4"/>
+
+
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/font_2"
+                        android:gravity="center"
+                        android:text="5 km"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/distanceSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:thumb="@drawable/custom_thumb"
+                    android:progressDrawable="@drawable/custom_seekbar_progress"
+                    android:padding="0dp"
+                    android:splitTrack="false"
+                    android:minHeight="8dp"
+                    android:maxHeight="10dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Life Status-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Life Status"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/userStatusChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:chipSpacing="8dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/single"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Single"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/singleWithKids"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Single With Kid(s)"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/divorced"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Divorced"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/divorcedWithKids"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Divorced With Kid(s)"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/widowed"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Widowed"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/widowedWithKids"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Widowed With Kid(s)"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/separated"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Separated"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/separatedWithKids"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Separated With Kid(s)"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Religion-->
+       <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Relegion"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/userReligionChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:chipSpacing="8dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/hindu"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Hindu"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/spiritual"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Spiritual"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/muslim"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Muslim"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/christian"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="christian"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/jain"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Jain"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/parsi"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Parsi"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sikh"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Sikh"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buddhist"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Buddhist"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/jewish"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Jewish"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/others"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Others"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Interested in-->
+       <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Interested in"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/user_hobby_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:chipSpacing="8dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="false">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/anime"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Anime"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/marvel"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Marvel"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/dcuniverse"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="DC Universe"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/videoGames"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Video Games"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/offlinegames"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Offline Games"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/movies"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Movies"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/travel"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Travel"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/foodie"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Foodie"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/music"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Music"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/dance"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Dance"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/gym"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Gym"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/yoga"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Yoga"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cartoon"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Cartoon"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/animatedmovies"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Animated Movies"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/horror"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Horror"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/athletic"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Athletic"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/otherthings"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Other things"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Relation type-->
+       <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:text="* Relation type"
+                android:gravity="center|start"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/update_text_heading"
+                android:includeFontPadding="false"
+                android:textSize="16sp"/>
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/relationTypeChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:chipSpacing="8dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/longtermpartner"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Long-term partner"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/newFriends"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="New friends"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/longTermOpenShort"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Long-term open short"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/shortTermFun"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Short-term fun"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/shortTermOpenToLong"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Short-term open to long"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/stillFiguringItOut"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Still figuring it out"
+                        android:textColor="@color/black"
+                        app:checkedIconVisible="false"
+                        app:chipBackgroundColor="@drawable/chip_bg_selector"
+                        app:chipCornerRadius="25dp"
+                        app:chipStrokeColor="@drawable/chip_stroke_selector"
+                        app:chipStrokeWidth="2dp"
+                        app:closeIconEnabled="false" />
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Log out-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/profile_details_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Log out"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logout_icon"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

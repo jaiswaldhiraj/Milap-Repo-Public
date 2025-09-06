@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="cardview_chips_bg" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:enabled">false</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:backgroundTint">#25FF0000</item>
+        <item name="chipCornerRadius">25dp</item>
+        <item name="chipBackgroundColor">#25FF0000</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="closeIconEnabled">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/bree_serif</item>
+    </style>
+</resources>

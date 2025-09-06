@@ -1,0 +1,638 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_searched_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <!-- Sticky Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/searched_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/black"
+            android:gravity="start|center_vertical"
+            android:paddingStart="20dp"
+            android:text="user_id"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Block -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/searched_user_dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="User profile picture"
+                        android:padding="3dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user_blank_profile_image"
+                        app:shapeAppearanceOverlay="@style/cardview_user_dp_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="15dp">
+
+                        <TextView
+                            android:id="@+id/searched_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="name"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="start"
+                            android:padding="1dp"/>
+
+                        <TextView
+                            android:id="@+id/searched_user_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="age"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="start"
+                            android:padding="1dp"/>
+
+                        <TextView
+                            android:id="@+id/searched_user_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Male (Straight)"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="start"
+                            android:padding="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/image_carousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" />
+
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/dotsIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="14dp"
+                    app:dotsColor="@color/grey_color"
+                    app:selectedDotColor="@color/white"
+                    app:dotsSize="8dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/likeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:text="@string/like"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/dark_red_color"
+                    app:cornerRadius="10dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/nopeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:text="@string/nope"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="0dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/white"
+                    app:cornerRadius="10dp"/>
+
+            </LinearLayout>
+
+            <!--            USER THOUGHT-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user_thought"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thought"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="start|center">
+
+
+                        <TextView
+                            android:id="@+id/searched_user_bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="“ User's thought about relation and world ”"
+                            android:textSize="16sp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/font_2"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            ESSENTIALS -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/tag_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Distance"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:gravity="start|center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/distance_icon"
+                            android:layout_marginStart="4dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/searched_distance_preference"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10km"
+                            android:textSize="16sp"
+                            android:layout_marginStart="13dp"
+                            android:fontFamily="@font/font_2"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            ESSENTIALS -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/tag_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Interested"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:gravity="start|center">
+
+                        <TextView
+                            android:id="@+id/searched_user_interest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Women"
+                            android:textSize="16sp"
+                            android:layout_marginStart="13dp"
+                            android:fontFamily="@font/font_2"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            ABOUT ME -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginBottom="4dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/tag_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About me"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="start|center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/hight_icon"
+                            />
+
+                        <TextView
+                            android:id="@+id/searched_user_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hight 170cm"
+                            android:textSize="16sp"
+                            android:layout_marginStart="13dp"
+                            android:fontFamily="@font/font_2"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="start|center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/birthday_icon"/>
+
+                        <TextView
+                            android:id="@+id/searched_user_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30/02/2005"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:layout_marginStart="9dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:gravity="start|center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ring_icon"/>
+
+                        <TextView
+                            android:id="@+id/searched_user_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Single"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:layout_marginStart="13dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="start|center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/relegion_icon"/>
+
+                        <TextView
+                            android:id="@+id/searched_user_religion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hindu"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            SEARCHING FOR -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="start|center"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginStart="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/tag_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Searching Milap"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.chip.ChipGroup
+                        style="@style/Widget.MaterialComponents.Chip.Entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:chipSpacingVertical="-8dp"
+                        app:selectionRequired="false"
+                        app:singleSelection="false">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/searched_user_relation_type"
+                            style="@style/cardview_chips_bg"
+                            android:text="New Friends" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            HOBBIES -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/profile_details_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="start|center"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:layout_marginStart="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/interest_icon"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hobbies"
+                            android:textColor="@color/profile_text_grey"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:paddingStart="8dp"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/searched_user_hobby_chip_group"
+                        style="@style/Widget.MaterialComponents.Chip.Entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:chipSpacingVertical="-8dp"
+                        app:selectionRequired="false"
+                        app:singleSelection="false"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <!-- Lottie Animation Overlay -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/lottie_like_animation" />
+
+
+
+</LinearLayout>

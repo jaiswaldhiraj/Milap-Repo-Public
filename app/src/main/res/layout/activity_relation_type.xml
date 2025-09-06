@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginsetup.RelationType"
+    android:background="@color/white">
+
+
+    <!--  CHIPS LINEAR LAYOUT -->
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ring" />
+
+        <TextView
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/bree_serif"
+            android:gravity="center|left"
+            android:text="What are you looking for ?"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.378">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/relationTypeChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:chipSpacing="8dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/longtermpartner"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Long-term partner"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/newFriends"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="New friends"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/longTermOpenShort"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Long-term open short"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/shortTermFun"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Short-term fun"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/shortTermOpenToLong"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Short-term open to long"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/stillFiguringItOut"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Still figuring it out"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/relation_type_continue_button"
+            style="@style/button_grey"
+            android:fontFamily="@font/font_2"
+            android:layout_width="319dp"
+            android:layout_height="52dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/circle_dot_loading_animation" />
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

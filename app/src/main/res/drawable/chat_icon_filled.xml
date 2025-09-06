@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="35dp"
+    android:viewportWidth="35"
+    android:viewportHeight="35">
+
+  <!-- Chat bubble background filled -->
+  <path
+      android:fillColor="#FF0000"
+      android:pathData="M2,17.5C2,13.389 3.633,9.447 6.54,6.54C9.447,3.633 13.389,2 17.5,2C21.611,2 25.553,3.633 28.46,6.54C31.367,9.447 33,13.389 33,17.5V27.362C33,29.005 33,29.823 32.756,30.479C32.562,31 32.258,31.472 31.865,31.865C31.472,32.258 31,32.562 30.479,32.756C29.823,33 29.003,33 27.362,33H17.5C13.389,33 9.447,31.367 6.54,28.46C3.633,25.553 2,21.611 2,17.5Z"
+      android:strokeWidth="1"
+      android:strokeColor="#FF0000"
+      />
+
+  <!-- Message lines as strokes to ensure visibility -->
+  <path
+      android:pathData="M11.687,15.562H23.312"
+      android:strokeWidth="2"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round" />
+
+  <path
+      android:pathData="M17.5,23.312H23.312"
+      android:strokeWidth="2"
+      android:strokeColor="#000000"
+      android:strokeLineCap="round" />
+</vector>

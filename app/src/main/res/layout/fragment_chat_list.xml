@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_search_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Main content with SearchBar and RecyclerView -->
+    <LinearLayout
+        android:id="@+id/main_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/user_id"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            />
+
+        <!-- Search Bar -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:background="@drawable/search_bar_bg"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="10dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/lens_search_icon" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextSearch"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@null"-->
+<!--                android:hint="Search users"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textColorHint="#AEFFFFFF"-->
+<!--                android:textSize="16sp" />-->
+<!--        </LinearLayout>-->
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <!-- Fragment container on top for opening chat or profiles -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!-- Fragment container on top for opening chat or profiles -->
+
+    <TextView
+    android:id="@+id/no_results"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No results found 🤷‍♂️."
+    android:visibility="gone"
+    android:layout_gravity="center" />
+
+
+</FrameLayout>

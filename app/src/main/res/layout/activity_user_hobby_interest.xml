@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginsetup.UserHobbyInterest"
+    android:background="@color/white">
+
+
+    <!--  CHIPS LINEAR LAYOUT -->
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/wine_glass" />
+
+        <TextView
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/bree_serif"
+            android:gravity="center|left"
+            android:text="What things do you like ?"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_2"
+            android:gravity="center|left"
+            android:text="You Can Select Multiple"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.378">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/user_hobby_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:chipSpacing="8dp"
+                app:selectionRequired="true"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/anime"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Anime"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cricket"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Cricket"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+
+                <com.google.android.material.chip.Chip
+
+                    android:id="@+id/football"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="FootBall"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/marvel"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Marvel"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dcuniverse"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="DC Universe"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/videoGames"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Video Games"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/offlinegames"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Offline Games"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/movies"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Movies"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/travel"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Travel"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/foodie"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Foodie"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/music"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Music"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dance"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Dance"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/gym"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Gym"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/yoga"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Yoga"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cartoon"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Cartoon"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/animatedmovies"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Animated Movies"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/horror"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Horror"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/athletic"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Athletic"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/otherthings"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bree_serif"
+                    android:text="Other things"
+                    android:textColor="@color/black"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@drawable/chip_bg_selector"
+                    app:chipCornerRadius="25dp"
+                    app:chipStrokeColor="@drawable/chip_stroke_selector"
+                    app:chipStrokeWidth="2dp"
+                    app:closeIconEnabled="false" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/user_hobby_continue_button"
+            style="@style/button_grey"
+            android:layout_width="319dp"
+            android:layout_height="52dp"
+            android:fontFamily="@font/font_2"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/circle_dot_loading_animation" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

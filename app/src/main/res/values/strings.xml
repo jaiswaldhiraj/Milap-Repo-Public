@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Milap</string>
+    <string name="continue_login_button_text_white">CONTINUE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nope">Nope</string>
+    <string name="like">Like</string>
+    <string name="liked">Liked</string>
+    <string name="update_your_profile">Update your profile</string>
+</resources>
