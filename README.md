@@ -9,6 +9,11 @@
   <img src="https://img.shields.io/badge/backend-Firebase-orange" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk">
+    <img src="https://img.shields.io/badge/⬇️%20Download-Milap%20APK-pink?style=for-the-badge&logo=android" alt="Download Milap APK"/>
+  </a>
+</p>
 
 # 💖 Milap – Public Repo  
 
@@ -144,7 +149,11 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 # 📥 Download  
 
 👉 Try out the **Milap App** now:  
-[⬇️ Download Milap APK](https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk)  
+<p align="start">
+  <a href="https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk">
+    <img src="https://img.shields.io/badge/⬇️%20Download-Milap%20APK-pink?style=for-the-badge&logo=android" alt="Download Milap APK"/>
+  </a>
+</p> 
 
 ---
 ## 💡 Why Choose Milap?
