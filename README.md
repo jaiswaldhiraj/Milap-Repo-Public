@@ -1,10 +1,13 @@
-![Milap Banner](assets/banner.png)
+<p align="center">
+  <img src="assets/banner.png" alt="Milap Banner" width="600"/>
+</p>
 
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Platform](https://img.shields.io/badge/Platform-Android-green)
-![Language](https://img.shields.io/badge/Language-Java-blue)
-![Backend](https://img.shields.io/badge/Backend-Firebase-orange)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" />
+  <img src="https://img.shields.io/badge/platform-Android-green" />
+  <img src="https://img.shields.io/badge/language-Java-blue" />
+  <img src="https://img.shields.io/badge/backend-Firebase-orange" />
+</p>
 
 
 # 💖 Milap – Public Repo  
