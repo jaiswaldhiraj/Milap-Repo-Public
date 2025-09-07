@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Milap Banner" width="600"/>
+  <img src="assets/banner.svg" alt="Milap Banner" width="1000"/>
 </p>
 
 <p align="center">
