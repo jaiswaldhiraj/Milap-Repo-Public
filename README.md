@@ -24,6 +24,20 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 
 ---
 
+## 📌 Table of Contents  
+- [✨ Features](#-features)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [🔮 Future Scope](#-future-scope)  
+- [📱 App Screenshots](#-app-screenshots)  
+- [🎥 Video Showcase](#-video-showcase)  
+- [📥 Download](#-download)  
+- [💡 Why Choose Milap?](#-why-choose-milap)  
+- [🤝 Contributing](#-contributing)  
+- [📄 License](#-license)  
+- [📬 Contact](#-contact)  
+
+---
+
 ## ✨ Features  
 
 - 📱 **Phone Number Authentication** – Secure login via OTP for verified access.  
@@ -162,5 +176,15 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 - Real-time matchmaking powered by Firebase  
 - Smooth animations and intuitive UI for a delightful experience  
 - Built with scalability and personalization in mind  
+
+---
+
+## 📬 Contact Me
+
+Feel free to reach out or explore my work:
+
+- 📧 [Email Me](mailto:jaiswaldhiraj928@gmail.com)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/jaiswaldhiraj/)  
+- 🌐 [Visit My Portfolio](https://www.dhirajportfolio.online/)  
 
 ---
