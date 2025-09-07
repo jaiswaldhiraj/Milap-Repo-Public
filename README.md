@@ -43,10 +43,94 @@ Public showcase of Milap, a dating app built with Android Studio using Java, Fir
 
 
 
-## 📱 Screenshots
+# 📱 Screenshots
+
+### User Login
+
+User can access there account by Log in with their phone. If the user did not login previously then he need to complete the login setup so in future he don't need to set up again
 
 | PhoneNo. Login | Otp Verification |
 |------------|---------------|
 | <img src="assets/screenshots/phoneno.jpg" width="400"/> | <img src="assets/screenshots/otpverify.jpg" width="400"/> |
 
-#### User can access there account by Log in with their phone. If the user did not login previously then he need to complete the login setup so in future he don't need to set up again
+
+### User Login
+
+User has to fill the required things to complete the account seetup  
+
+- Taking User About and Age confirmation
+
+| PhoneNo. Login | Otp Verification |
+|-------------|----------------|
+| <img src="assets/screenshots/about.jpg" width="400"/> | <img src="assets/screenshots/age.jpg" width="400"/> |
+
+
+- Taking User Gender and Gender Type
+
+| Gender | Gender Type |
+|-------------|----------------|
+| <img src="assets/screenshots/gender.jpg" width="400"/> | <img src="assets/screenshots/gendertype.jpg" width="400"/> |
+
+
+
+
+- Creation of user id and taking interested partner
+
+| User id | Interested partner |
+|-------------|----------------|
+| <img src="assets/screenshots/createid.jpg" width="400"/> | <img src="assets/screenshots/interestedin.jpg" width="400"/> |
+
+
+
+- Life Status and Hobbies
+
+| Life Status | Hobbies |
+|-------------|----------------|
+| <img src="assets/screenshots/lifestatus.jpg" width="400"/> | <img src="assets/screenshots/hobbies.jpg" width="400"/> |
+
+
+
+- Life Partner and Set distance
+
+| Life Partner | Set distance |
+|-------------|----------------|
+| <img src="assets/screenshots/partner.jpg" width="400"/> | <img src="assets/screenshots/setdistance.jpg" width="400"/> |
+
+
+
+- Relegion and User bio
+
+| Relegion | User bio |
+|-------------|----------------|
+| <img src="assets/screenshots/relegion.jpg" width="400"/> | <img src="assets/screenshots/thought.jpg" width="400"/> |
+
+
+
+- Relegion and User bio
+
+| Relegion | User bio |
+|-------------|----------------|
+| <img src="assets/screenshots/relegion.jpg" width="400"/> | <img src="assets/screenshots/thought.jpg" width="400"/> |
+
+
+- Location Fetcher and Select photos
+
+| Location Fetcher | Select photos |
+|-------------|----------------|
+| <img src="assets/screenshots/locationfetcher.jpg" width="400"/> | <img src="assets/screenshots/selectphotos.jpg" width="400"/> |
+
+
+- Edit Photo and Snaps
+
+| Edit Photo | snaps |
+|-------------|----------------|
+| <img src="assets/screenshots/editphoto.jpg" width="400"/> | <img src="assets/screenshots/snaps.jpg" width="400"/> |
+
+
+
+- Welcome Page
+
+| Welcome |
+|-------------|
+| <img src="assets/screenshots/welcomepage.jpg" width="400"/> |
+
