@@ -51,7 +51,7 @@ User can access there account by Log in with their phone. If the user did not lo
 
 | PhoneNo. Login | Otp Verification |
 |------------|---------------|
-| <img src="assets/screenshots/phoneno.jpg" width="400"/> | <img src="assets/screenshots/otpverify.jpg" width="400"/> |
+| <img src="assets/screenshots/phoneno.jpg" width="150"/> | <img src="assets/screenshots/otpverify.jpg" width="150"/> |
 
 
 ### User Login
@@ -62,14 +62,14 @@ User has to fill the required things to complete the account seetup
 
 | PhoneNo. Login | Otp Verification |
 |-------------|----------------|
-| <img src="assets/screenshots/about.jpg" width="400"/> | <img src="assets/screenshots/age.jpg" width="400"/> |
+| <img src="assets/screenshots/about.jpg" width="150"/> | <img src="assets/screenshots/age.jpg" width="150"/> |
 
 
 - Taking User Gender and Gender Type
 
 | Gender | Gender Type |
 |-------------|----------------|
-| <img src="assets/screenshots/gender.jpg" width="400"/> | <img src="assets/screenshots/gendertype.jpg" width="400"/> |
+| <img src="assets/screenshots/gender.jpg" width="150"/> | <img src="assets/screenshots/gendertype.jpg" width="150"/> |
 
 
 
@@ -78,7 +78,7 @@ User has to fill the required things to complete the account seetup
 
 | User id | Interested partner |
 |-------------|----------------|
-| <img src="assets/screenshots/createid.jpg" width="400"/> | <img src="assets/screenshots/interestedin.jpg" width="400"/> |
+| <img src="assets/screenshots/createid.jpg" width="150"/> | <img src="assets/screenshots/interestedin.jpg" width="150"/> |
 
 
 
@@ -86,7 +86,7 @@ User has to fill the required things to complete the account seetup
 
 | Life Status | Hobbies |
 |-------------|----------------|
-| <img src="assets/screenshots/lifestatus.jpg" width="400"/> | <img src="assets/screenshots/hobbies.jpg" width="400"/> |
+| <img src="assets/screenshots/lifestatus.jpg" width="150"/> | <img src="assets/screenshots/hobbies.jpg" width="150"/> |
 
 
 
@@ -94,7 +94,7 @@ User has to fill the required things to complete the account seetup
 
 | Life Partner | Set distance |
 |-------------|----------------|
-| <img src="assets/screenshots/partner.jpg" width="400"/> | <img src="assets/screenshots/setdistance.jpg" width="400"/> |
+| <img src="assets/screenshots/partner.jpg" width="150"/> | <img src="assets/screenshots/setdistance.jpg" width="150"/> |
 
 
 
@@ -102,7 +102,7 @@ User has to fill the required things to complete the account seetup
 
 | Relegion | User bio |
 |-------------|----------------|
-| <img src="assets/screenshots/relegion.jpg" width="400"/> | <img src="assets/screenshots/thought.jpg" width="400"/> |
+| <img src="assets/screenshots/relegion.jpg" width="150"/> | <img src="assets/screenshots/thought.jpg" width="150"/> |
 
 
 
@@ -110,27 +110,27 @@ User has to fill the required things to complete the account seetup
 
 | Relegion | User bio |
 |-------------|----------------|
-| <img src="assets/screenshots/relegion.jpg" width="400"/> | <img src="assets/screenshots/thought.jpg" width="400"/> |
+| <img src="assets/screenshots/relegion.jpg" width="150"/> | <img src="assets/screenshots/thought.jpg" width="150"/> |
 
 
 - Location Fetcher and Select photos
 
 | Location Fetcher | Select photos |
 |-------------|----------------|
-| <img src="assets/screenshots/locationfetcher.jpg" width="400"/> | <img src="assets/screenshots/selectphotos.jpg" width="400"/> |
+| <img src="assets/screenshots/locationfetcher.jpg" width="150"/> | <img src="assets/screenshots/selectphotos.jpg" width="150"/> |
 
 
 - Edit Photo and Snaps
 
 | Edit Photo | snaps |
 |-------------|----------------|
-| <img src="assets/screenshots/editphoto.jpg" width="400"/> | <img src="assets/screenshots/snaps.jpg" width="400"/> |
+| <img src="assets/screenshots/editphoto.jpg" width="150"/> | <img src="assets/screenshots/snaps.jpg" width="150"/> |
 
 
 
-- Welcome Page
+- User will see the Welcome Page only first time after setting up profile and the logo will be shown everytime user open the app
 
 | Welcome |
 |-------------|
-| <img src="assets/screenshots/welcomepage.jpg" width="400"/> |
+| <img src="assets/screenshots/welcomepage.jpg" width="150"/> |
 
