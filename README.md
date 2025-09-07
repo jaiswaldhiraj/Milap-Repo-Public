@@ -128,9 +128,58 @@ User has to fill the required things to complete the account seetup
 
 
 
-- User will see the Welcome Page only first time after setting up profile and the logo will be shown everytime user open the app
+- User will see the Welcome Page only first time after setting up profile and the logo will be shown everytime user open the app 
+- The App logo
 
-| Welcome |
-|-------------|
-| <img src="assets/screenshots/welcomepage.jpg" width="250"/> |
+| Welcome | Logo Milap |
+|-------------|----------------|
+| <img src="assets/screenshots/welcomepage.jpg" width="250"/> |<img src="assets/appscreenshots/logo.jpg" width="250"/> |
+
+
+### The Milap Application
+
+
+- Home page and Likes
+
+| Home page | Likes |
+|-------------|----------------|
+| <img src="assets/appscreenshots/home.jpg" width="250"/> | <img src="assets/appscreenshots/likes.jpg" width="250"/> |
+
+
+
+
+
+
+- User Profile and User Data
+
+| User Profile | User Data |
+|-------------|----------------|
+| <img src="assets/appscreenshots/userprofile.jpg" width="250"/> | <img src="assets/appscreenshots/userdata.jpg" width="250"/> |
+
+
+
+- Search page and chat page
+- You can only chat with those people whom you have liked and they liked back
+
+| Search page | chat page |
+|-------------|----------------|
+| <img src="assets/appscreenshots/search.jpg" width="250"/> | <img src="assets/appscreenshots/chatpage.jpg" width="250"/> |
+
+
+
+
+
+- Chats with people
+
+| Chat | Chat |
+|-------------|----------------|
+| <img src="assets/appscreenshots/chat2.jpg" width="250"/> | <img src="assets/appscreenshots/chat.jpg" width="250"/> |
+
+
+- How the profile will be shown of the search person
+
+| Profile | Data |
+|-------------|----------------|
+| <img src="assets/appscreenshots/profile.jpg" width="250"/> | <img src="assets/appscreenshots/data.jpg" width="250"/> |
+
 
