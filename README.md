@@ -1,3 +1,10 @@
+![Milap Banner](assets/banner.png)
+
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Language](https://img.shields.io/badge/Language-Java-blue)
+![Backend](https://img.shields.io/badge/Backend-Firebase-orange)
 
 
 # 💖 Milap – Public Repo  
@@ -49,7 +56,7 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 | <img src="assets/screenshots/phoneno.jpg" width="250"/> | <img src="assets/screenshots/otpverify.jpg" width="250"/> |  
 
 ➡️ Step-by-step onboarding includes About info, Age confirmation, Gender, User ID creation, Life status, Hobbies, Preferences, and more.  
-🛠️ Profile setup is only required during account creation
+🛠️ **Profile setup is only required during account creation**
 
 
 ---
@@ -135,5 +142,13 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 
 👉 Try out the **Milap App** now:  
 [⬇️ Download Milap APK](https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk)  
+
+---
+## 💡 Why Choose Milap?
+
+- Designed for meaningful connections, not just swipes  
+- Real-time matchmaking powered by Firebase  
+- Smooth animations and intuitive UI for a delightful experience  
+- Built with scalability and personalization in mind  
 
 ---
