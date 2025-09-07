@@ -183,3 +183,25 @@ User has to fill the required things to complete the account seetup
 | <img src="assets/appscreenshots/profile.jpg" width="250"/> | <img src="assets/appscreenshots/data.jpg" width="250"/> |
 
 
+
+### Video Showcase of Milap
+
+- Home page and search page
+
+| Home Page | search page |
+|-------------|----------------|
+| <img src="assets/gif/home.gif" width="250"/> | <img src="assets/gif/searchandlike.gif" width="250"/> |
+
+
+- User profile and chat
+
+| User profile | chat |
+|-------------|----------------|
+| <img src="assets/gif/userprofile.gif" width="250"/> | <img src="assets/gif/chat.gif" width="250"/> |
+
+
+# 📥 Download
+
+### You can try out the Milap Apllication 
+[Download Android MIlap Apk](https://github.com/jaiswaldhiraj/Milap-Repo-Public/releases/download/v1.0.0/Milap.apk).
+
