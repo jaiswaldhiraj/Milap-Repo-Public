@@ -42,3 +42,12 @@ Public showcase of Milap, a dating app built with Android Studio using Java, Fir
 
 
 
+
+## 📱 Screenshots
+
+<!-- | Onboarding | Profile Setup | Swipe Cards |
+|------------|---------------|-------------|
+| ![Onboarding](assets/milap/phoneno.jpg) | ![Profile](assets/screenshots/profile.png) | ![Swipe](assets/screenshots/swipe.png) |
+
+## 🎬 Demo
+![App Demo](assets/milap/age.jpg) -->
