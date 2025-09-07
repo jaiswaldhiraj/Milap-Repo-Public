@@ -31,10 +31,8 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 - [📱 App Screenshots](#-app-screenshots)  
 - [🎥 Video Showcase](#-video-showcase)  
 - [📥 Download](#-download)  
-- [💡 Why Choose Milap?](#-why-choose-milap)  
-- [🤝 Contributing](#-contributing)  
-- [📄 License](#-license)  
-- [📬 Contact](#-contact)  
+- [💡 Why Choose Milap?](#-why-choose-milap)
+- [📬 Contact](#-contact-me)  
 
 ---
 
