@@ -45,9 +45,8 @@ Public showcase of Milap, a dating app built with Android Studio using Java, Fir
 
 ## 📱 Screenshots
 
-<!-- | Onboarding | Profile Setup | Swipe Cards |
-|------------|---------------|-------------|
-| ![Onboarding](assets/milap/phoneno.jpg) | ![Profile](assets/screenshots/profile.png) | ![Swipe](assets/screenshots/swipe.png) |
+| PhoneNo. Login | Otp Verification |
+|------------|---------------|
+| ![Onboarding](assets/screenshots/phoneno.jpg) | ![Profile](assets/screenshots/otpverify.jpg) |
 
-## 🎬 Demo
-![App Demo](assets/milap/age.jpg) -->
+#### User can access there account by Log in with their phone. If the user did not login previously then he need to complete the login setup so in future he don't need to set up again
