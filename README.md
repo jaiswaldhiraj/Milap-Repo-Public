@@ -53,7 +53,7 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 ## 🛠 Tech Stack  
 
 - 🎨 **Frontend (Android)** – Java, XML, Lottie Animations.  
-- 🔥 **Backend** – Firebase Realtime Database, Authentication, Firebase Functions using node.js, Firbase Cloud Messaging & Firestore.
+- 🔥 **Backend** – Firebase Realtime Database, Authentication, Firebase Functions using node.js, Firebase Cloud Messaging & Firestore.
 - 🖼 **Media Handling** – Glide + cropping tools for photo uploads.
 - ⚙️ **Cloud Functions** – Automates matchmaking on mutual likes.
 
@@ -181,9 +181,8 @@ It offers smooth onboarding, swipe cards, real-time chat, and intelligent matchm
 
 Feel free to reach out or explore my work:
 
-- 📧 [Email Me](mailto:jaiswaldhiraj928@gmail.com)  
-- 💼 <a href="https://www.linkedin.com/in/jaiswaldhiraj/" target="_blank" rel="noopener noreferrer">LinkedIn</a>  
-- 🌐 <a href="https://www.dhirajportfolio.online/" target="_blank" rel="noopener noreferrer">Visit My Portfolio</a>  
-  
+- 📧 [jaiswaldhiraj928@gmail.com](mailto:jaiswaldhiraj928@gmail.com)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/jaiswaldhiraj/)  
+- 🌐 [Visit My Portfolio](https://www.dhirajportfolio.online/) 
 
 ---
